@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "books",
+		"_postman_id": "343de234-4be2-e910-3faf-0c764475c717",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all books",
+			"request": {
+				"url": "localhost:8080/Books",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET book by id",
+			"request": {
+				"url": "localhost:8080/Books/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST book",
+			"request": {
+				"url": "localhost:8080/Books",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"book 1\",\n\t\"category\": \"Thriller\",\n\t\"Pages\": 455,\n\t\"ISBN\": \"123456789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE book",
+			"request": {
+				"url": "localhost:8080/Books/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH book",
+			"request": {
+				"url": "localhost:8080/Books/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"book 213\",\n\t\"category\": \"Thrillerrrr\",\n\t\"Pages\": 4535,\n\t\"ISBN\": \"1234521adf6789\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

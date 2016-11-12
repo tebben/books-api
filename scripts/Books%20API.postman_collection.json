@@ -1,0 +1,295 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Books API",
+		"_postman_id": "343de234-4be2-e910-3faf-0c764475c717",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "books",
+			"description": "",
+			"item": [
+				{
+					"name": "GET all books",
+					"request": {
+						"url": "localhost:8080/Books",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET book by id",
+					"request": {
+						"url": "localhost:8080/Books/1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST book",
+					"request": {
+						"url": "localhost:8080/Books",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"book 1\",\n\t\"category\": \"Thriller\",\n\t\"Pages\": 455,\n\t\"ISBN\": \"123456789\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE book",
+					"request": {
+						"url": "localhost:8080/Books/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH book",
+					"request": {
+						"url": "localhost:8080/Books/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"book 213\",\n\t\"category\": \"Thrillerrrr\",\n\t\"Pages\": 4535,\n\t\"ISBN\": \"1234521adf6789\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"description": "",
+			"item": [
+				{
+					"name": "GET all users",
+					"request": {
+						"url": "localhost:8080/Users",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET  user by id",
+					"request": {
+						"url": "localhost:8080/Users/1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST user",
+					"request": {
+						"url": "localhost:8080/Users",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Leen van Frisia\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE user",
+					"request": {
+						"url": "localhost:8080/Users/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH user",
+					"request": {
+						"url": "localhost:8080/Users/1",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Leentje\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET WishList",
+					"request": {
+						"url": "localhost:8080/Users/1/WishList",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST wishList",
+					"request": {
+						"url": "localhost:8080/Users/1/WishList",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"wishList\": [1, 3, 5]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH wishList",
+					"request": {
+						"url": "localhost:8080/Users/1/WishList",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"wishList\": [1, 3]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET read",
+					"request": {
+						"url": "localhost:8080/Users/1/Read",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST read",
+					"request": {
+						"url": "localhost:8080/Users/1/Read",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"read\": [1]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH read",
+					"request": {
+						"url": "localhost:8080/Users/1/Read",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"wishList\": [1, 3]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
